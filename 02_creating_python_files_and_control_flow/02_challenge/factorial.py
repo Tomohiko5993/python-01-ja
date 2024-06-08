@@ -13,5 +13,6 @@ def compute_factorial():
     # result変数を編集し、最終的な計算結果を保存します
     return result
 
-result = compute_factorial()
-print( result )
+compute_factorial()
+#result = compute_factorial()
+#print(result)
