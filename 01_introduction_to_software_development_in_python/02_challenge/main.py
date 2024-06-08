@@ -37,12 +37,12 @@ floor_division_result = 10//3
 print(floor_division_result)
 # 10. 10、20、30の平均を求めてください
 # ここにコードを書いてください
-average_result = (10+20+30)/4
+average_result = (10+20+30)/3
 print(average_result)
 # 11. 華氏98.6度を摂氏に変換してください
 fahrenheit = 98.6
 # ここにコードを書いてください
-celsius = (fahrenheit * 9/5)+32
+celsius = (fahrenheit -32) * 5 /9
 print(celsius)
 # 12. 縦5、横3の長方形の周囲の長さを求めてください
 length = 5
@@ -70,5 +70,5 @@ print(hypotenuse)
 # 16. 半径5の球の体積を求めてください
 radius_sphere = 5
 # ここにコードを書いてください
-volume_sphere = 3/4 * math.pi * radius_sphere**3
+volume_sphere = 4 / 3 * math.pi * radius_sphere**3
 print(volume_sphere)
