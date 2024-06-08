@@ -1,27 +1,19 @@
-
-def convert(temp, deg):
+def convert():
     # ここにコードを書いてください
     # temp変数を編集し、ユーザー入力として温度を受け取ります。整数に変換することを忘れないでください
-    if (deg == "f"):
-        celsius = (temp - 32 ) * 5 / 9
-        return celsius
+    print("Please enter the temperature")
+    temp = input()
+    print("Please enter the f or c")
+    degree = input()
 
-    elif (deg == "c"):
-        fahrenheit = (temp * 9 / 5) + 32
-        return fahrenheit
+    if ( degree == "f" ) :
+        temp = (int(temp) -32) * 5 / 9
+        print(temp)
+    else :
+        temp = (int(temp) * 9 / 5) -32
+        print(temp)
+
+    return temp
 
 
-def main():
-    temp = float(input("Enter the temperature: "))
-    deg = input("Enter the unit (c for Celsius, f for Fahrenheit): ")
-
-    converted_temp = convert(temp, deg)
-
-    if isinstance(converted_temp, float):
-        if deg == "f":
-            print(f"{temp} degrees Fahrenheit is {converted_temp} degrees Celsius.")
-        elif deg == "c":
-            print(f"{temp} degrees Celsius is {converted_temp} degrees Fahrenheit.")
-    else:
-        print(converted_temp)
-main()
+convert()
