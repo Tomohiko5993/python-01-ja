@@ -1,35 +1,23 @@
 def add(a, b):
-    try:
-        a = float(a)
-        b = float(b)
-    except ValueError:
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
         return "bad input"
     return a + b
 
 
 def subtract(a, b):
-    try:
-        a = float(a)
-        b = float(b)
-    except ValueError:
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
         return "bad input"
     return a - b
 
 
 def multiply(a, b):
-    try:
-        a = float(a)
-        b = float(b)
-    except ValueError:
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
         return "bad input"
     return a * b
 
 
 def divide(a, b):
-    try:
-        a = float(a)
-        b = float(b)
-    except ValueError:
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
         return "bad input"
     if b == 0:
         return "Cannot divide by zero"
